@@ -1,3 +1,6 @@
+//From presenation one refactoring aspect was the adding of an image to the photon beam
+let img;
+
 class Photon {
 
   constructor(x, y) {
@@ -23,13 +26,9 @@ class Photon {
     if (this.history.length > 500) {
       this.history.splice(0, 1);
     }
-
-
   }
 
   show() {
-
-  
     strokeWeight(4);
     // REFACTORING ASPECT, changed trail colour 
     stroke(112,128,144);
@@ -43,10 +42,6 @@ class Photon {
     for (let v of this.history) {
       vertex(v.x,v.y)
     }
-
     endShape();
-
   }
-
-
 }
