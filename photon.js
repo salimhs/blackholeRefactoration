@@ -30,9 +30,9 @@ class Photon {
 
   show() {
     strokeWeight(4);
-    // REFACTORING ASPECT, changed trail colour 
     stroke(112,128,144);
-    //  REFACTORING ASPECT, called image function
+    
+    //Image function from presentation
     image(img,this.pos.x -20  ,this.pos.y - 15 , 50,50);
 
 
