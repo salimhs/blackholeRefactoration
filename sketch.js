@@ -10,14 +10,16 @@ let start, end;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // REFACTORING ASPECT, implemented image
-  img = loadImage('ufo.png'); 
+  
+  //Implementing image into sketch.js
+  img = loadImage('yusuke.png');
+  
   m87 = new Blackhole(width / 2, height / 2, 10000);
 
   start = height / 2;
   end = height / 2 - m87.rs * 2.6;
   
-  // REFACTORING ASPECT, random position for vector
+  //Implementing random position for particles from presentation
   particles.push(new Photon(width,random(20,800)));
 
 }
